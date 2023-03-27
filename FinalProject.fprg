@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="nest"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-27 11:23:59 "/>
+        <attribute name="created" value="bmVzdDtERVNLVE9QLTdFRVZTNlM7MjAyMy0wMy0yNzsiMDk6MzY6MDYgIjsyNzIy"/>
+        <attribute name="edited" value="bmVzdDtERVNLVE9QLTdFRVZTNlM7MjAyMy0wMy0yNzsiMTE6MjM6NTkgIjs5OzI4MzU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="&#1054;&#1073;&#1098;&#1103;&#1074;&#1083;&#1103;&#1077;&#1084; &#1074;&#1093;&#1086;&#1076;&#1085;&#1086;&#1081; &#1084;&#1072;&#1089;&#1089;&#1080;&#1074; &#1089;&#1090;&#1088;&#1086;&#1082;"/>
+            <declare name="inArray" type="String" array="True" size="7"/>
+            <comment text="&#1054;&#1073;&#1098;&#1103;&#1074;&#1083;&#1103;&#1077;&#1084; &#1074;&#1099;&#1093;&#1086;&#1076;&#1085;&#1086;&#1081; &#1084;&#1072;&#1089;&#1089;&#1080;&#1074; &#1089;&#1090;&#1088;&#1086;&#1082;"/>
+            <declare name="outArray" type="String" array="True" size="7"/>
+            <comment text="i, j - &#1089;&#1095;&#1077;&#1090;&#1095;&#1080;&#1082;&#1080; &#1076;&#1083;&#1103; &#1094;&#1080;&#1082;&#1083;&#1086;&#1074; for &#1080; &#1080;&#1085;&#1076;&#1077;&#1082;&#1089;&#1099; &#1101;&#1083;&#1077;&#1084;&#1077;&#1085;&#1090;&#1086;&#1074; &#1084;&#1072;&#1089;&#1089;&#1080;&#1074;&#1086;&#1074;"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="j" type="Integer" array="False" size=""/>
+            <comment text="&#1047;&#1072;&#1087;&#1086;&#1083;&#1085;&#1103;&#1077;&#1084; &#1074;&#1093;&#1086;&#1076;&#1085;&#1086;&#1081; &#1084;&#1072;&#1089;&#1089;&#1080;&#1074; &#1089;&#1090;&#1088;&#1086;&#1082;&#1072;&#1084;&#1080; : &#13;&#10;1) &#1074;&#1089;&#1077; &#1089;&#1090;&#1088;&#1086;&#1082;&#1080; &#1076;&#1083;&#1103; &#1089;&#1088;&#1072;&#1074;&#1085;&#1077;&#1085;&#1080;&#1103; &#1074; Flowgorithm &#1085;&#1072;&#1095;&#1080;&#1085;&#1072;&#1102;&#1090;&#1089;&#1103; &#1085;&#1072; &#1089;&#1080;&#1084;&#1074;&#1086;&#1083;&#1099; &quot;and&quot;&#13;&#10;&#13;&#10;2) &#1084;&#1072;&#1089;&#1089;&#1080;&#1074; &#1079;&#1072;&#1087;&#1086;&#1083;&#1085;&#1103;&#1077;&#1084; &#1089;&#1090;&#1088;&#1086;&#1082;&#1072;&#1084;&#1080; &#1088;&#1072;&#1079;&#1085;&#1086;&#1081; &#1076;&#1083;&#1080;&#1085;&#1099; &#1085;&#1072;&#1095;&#1080;&#1085;&#1072;&#1102;&#1097;&#1080;&#1084;&#1080;&#1089;&#1103; &#1085;&#1072; &#1089;&#1080;&#1084;&#1074;&#1086;&#1083;&#1099; &quot;and&quot;"/>
+            <assign variable="inArray[0]" expression="&quot;android&quot;"/>
+            <assign variable="inArray[1]" expression="&quot;andr&quot;"/>
+            <assign variable="inArray[2]" expression="&quot;an&quot;"/>
+            <assign variable="inArray[3]" expression="&quot;androi&quot;"/>
+            <assign variable="inArray[4]" expression="&quot;and&quot;"/>
+            <assign variable="inArray[5]" expression="&quot;andro&quot;"/>
+            <assign variable="inArray[6]" expression="&quot;a&quot;"/>
+            <output expression="&quot;&#1057;&#1086;&#1079;&#1076;&#1072;&#1083;&#1080; &#1084;&#1072;&#1089;&#1089;&#1080;&#1074; &#1089;&#1090;&#1088;&#1086;&#1082; :                                     &quot; &amp; &quot;&#1057;&#1086;&#1079;&#1076;&#1072;&#1077;&#1084; &#1074;&#1099;&#1093;&#1086;&#1076;&#1085;&#1086;&#1081; &#1084;&#1072;&#1089;&#1089;&#1080;&#1074; :&quot;" newline="True"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="j" expression="0"/>
+            <for variable="i" start="0" end="6" direction="inc" step="1">
+                <comment text="&#1045;&#1089;&#1083;&#1080; &#1074;&#1086; &#1074;&#1093;&#1086;&#1076;&#1085;&#1086;&#1084; &#1084;&#1072;&#1089;&#1089;&#1080;&#1074;&#1077; &#1089;&#1090;&#1088;&#1086;&#1082;&#1072; &lt;= &quot;and&quot;:&#13;&#10;&#1090;&#1086; &#1077;&#1089;&#1090;&#1100; &lt;= 3 &#1089;&#1080;&#1084;&#1074;&#1086;&#1083;&#1086;&#1074;, &#1090;&#1086; &#1079;&#1072;&#1087;&#1080;&#1089;&#1099;&#1074;&#1072;&#1077;&#1084; &#1101;&#1090;&#1086;&#1090; &#1101;&#1083;&#1077;&#1084;&#1077;&#1085;&#1090; &#1074;&#1093;&#1086;&#1076;&#1085;&#1086;&#1075;&#1086; &#1084;&#1072;&#1089;&#1089;&#1080;&#1074;&#1072; &#1074; &#1074;&#1099;&#1093;&#1086;&#1076;&#1085;&#1086;&#1081; &#1084;&#1072;&#1089;&#1089;&#1080;&#1074;&#13;&#10;&#13;&#10;&#1045;&#1089;&#1083;&#1080; &#1074;&#1086; &#1074;&#1093;&#1086;&#1076;&#1085;&#1086;&#1084; &#1084;&#1072;&#1089;&#1089;&#1080;&#1074;&#1077; &#1089;&#1090;&#1088;&#1086;&#1082;&#1072; =&gt; 3 &#1089;&#1080;&#1084;&#1074;&#1086;&#1083;&#1086;&#1074;, &#1074; &#1074;&#1099;&#1093;&#1086;&#1076;&#1085;&#1086;&#1081; &#1084;&#1072;&#1089;&#1089;&#1080;&#1074; &#1079;&#1072;&#1087;&#1080;&#1089;&#1099;&#1074;&#1072;&#1077;&#1084; &#1089;&#1090;&#1088;&#1086;&#1082;&#1091;: null"/>
+                <if expression="inArray[i] &lt;= &quot;and&quot;">
+                    <then>
+                        <assign variable="outArray[j]" expression="inArray[i]"/>
+                        <output expression="&quot;i = &quot; &amp; i &amp; &quot;:   &quot; &amp; inArray[i] &amp; &quot; &lt;= &quot; &amp; &quot;and&quot; &amp; &quot; -  yes                                          &quot; &amp; &quot;j = &quot; &amp; j &amp; &quot;:  &quot; &amp; outArray[j] &amp; &quot; &lt;= &quot; &amp; &quot;and&quot; &amp; &quot; -  yes, &#1079;&#1072;&#1087;&#1080;&#1089;&#1099;&#1074;&#1072;&#1077;&#1084; &#1074; &#1074;&#1099;&#1093;&#1086;&#1076;&#1085;&#1086;&#1081; &#1084;&#1072;&#1089;&#1089;&#1080;&#1074;&quot;" newline="False"/>
+                        <output expression="&quot;&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <assign variable="outArray[j]" expression="&quot;null&quot;"/>
+                        <output expression="&quot;i = &quot; &amp; i &amp; &quot;:   &quot; &amp; inArray[i] &amp; &quot; &lt;= &quot; &amp; &quot;and -  no                                        &quot; &amp; &quot;j = &quot; &amp; j &amp; &quot;:  &quot; &amp; &quot;outArray[&quot; &amp; j &amp; &quot;] = &quot; &amp; outArray[j]" newline="True"/>
+                        <output expression="&quot;&quot;" newline="True"/>
+                    </else>
+                </if>
+                <assign variable="j" expression="j + 1"/>
+            </for>
+            <output expression="&quot;&quot;" newline="True"/>
+            <output expression="&quot;&#1042;&#1099;&#1093;&#1086;&#1076;&#1085;&#1086;&#1081; &#1084;&#1072;&#1089;&#1089;&#1080;&#1074; :  &quot;" newline="True"/>
+            <assign variable="j" expression="0"/>
+            <for variable="j" start="0" end="6" direction="inc" step="1">
+                <comment text="&#1042;&#1099;&#1074;&#1086;&#1076;&#1080;&#1084; &#1074;&#1099;&#1093;&#1086;&#1076;&#1085;&#1086;&#1081; &#1084;&#1072;&#1089;&#1089;&#1080;&#1074; &#1085;&#1072; &#1101;&#1082;&#1088;&#1072;&#1085;"/>
+                <if expression="outArray[j] != &quot;null&quot;">
+                    <then>
+                        <output expression="&quot;j = &quot; &amp; j &amp; &quot;:  &quot; &amp; outArray[j] &amp; &quot; &lt;= &quot; &amp; &quot;and&quot; &amp; &quot; -  yes&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
