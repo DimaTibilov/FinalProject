@@ -21,24 +21,24 @@ int GetNumber(string text)
 //------------------------------------------------
 //  ввод элементов массива - строк
 
-string [] InputMassiv (int numbers)
+string[] InputMassiv(int numbers)
 {
-    string [] array = new string [numbers];
+    string[] array = new string[numbers];
     string str = String.Empty;
     for (int i = 0; i < numbers; i++) //  цикл - заполняем массив
     {
         Console.WriteLine("Введите строку");
         str = Console.ReadLine();
-        array [i] = str;
+        array[i] = str;
     }
-        
+
     return array;  //  возвращаем массив
 }
 
 //---------------------------------------------------------
 //  вывод одномерного массива в консоль
 
-string PrintArrayOneDim(string [] array)
+string PrintArrayOneDim(string[] array)
 {
     string result = String.Empty;
     int length = array.Length;
@@ -53,47 +53,47 @@ string PrintArrayOneDim(string [] array)
 
 //-------------------------------------------------------
 //  поиск во входном массиве строк с длиной <=3 символа
-// string [] FindInMassiv(string [] inArray)
-// {
+string[] FindInMassiv(string[] inArray)
+{
 
-//     int j = 0;
-//     int len = inArray.Length;
-//     string [] outArray = new string[len];
-    
-//     for (int i = 0; i < len; i++)
-//     {
-//         if (inArray [i].Length <= 3)
-//         {
-//             outArray [j] = inArray [i];
-//             j =j + 1;
-//         }
-//     }
-//     return outArray;
-// }
+    int j = 0;
+    int len = inArray.Length;
+    string[] outArray = new string[len];
+
+    for (int i = 0; i < len; i++)
+    {
+        if (inArray[i].Length <= 3)
+        {
+            outArray[j] = inArray[i];
+            j = j + 1;
+        }
+    }
+    return outArray;
+}
 
 //-----------------------------------------------------------
 //  основная программа
 
 numbers = GetNumber("Введите кол-во элементов массива ");
 
-string [] inputMassiv = new string [numbers];  //  массив для ввода строк
+string[] inputMassiv = new string[numbers];  //  массив для ввода строк
 
-string [] outputMassiv = new string[numbers];
+string[] outputMassiv = new string[numbers];
 
 Console.WriteLine("Заполнение массива");
 
-inputMassiv = InputMassiv (numbers);
+inputMassiv = InputMassiv(numbers);
 
 print = PrintArrayOneDim(inputMassiv);
 
 Console.Write("Получаем входной массив :   ");
 
-Console.WriteLine(print); 
+Console.WriteLine(print);
 
-// outputMassiv = FindInMassiv(inputMassiv);
+outputMassiv = FindInMassiv(inputMassiv);
 
-// Console.Write("Получаем выходной массив :   ");
+Console.Write("Получаем выходной массив :   ");
 
-// print = PrintArrayOneDim(outputMassiv);
+print = PrintArrayOneDim(outputMassiv);
 
-// Console.WriteLine(print);
+Console.WriteLine(print);
